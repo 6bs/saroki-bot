@@ -1,0 +1,33 @@
+{
+  "name": "-asdf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bot": "0.0.3",
+    "canvacord": "^5.1.0",
+    "colors": "^1.4.0",
+    "dbd.db": "^1.3.12",
+    "dbd.express": "^1.0.1",
+    "dbd.js": "^2.2.6",
+    "discord-canvas": "^1.4.1",
+    "discord.js": "^12.5.1",
+    "express": "^4.17.1",
+    "express-latency": "0.0.4",
+    "express-ping": "^1.4.0",
+    "fs": "0.0.1-security",
+    "latenz": "^0.2.4",
+    "moment": "^2.29.1",
+    "ms-latency": "^1.0.1",
+    "ytdl-core": "^4.5.0"
+  }
+}
