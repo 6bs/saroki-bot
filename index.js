@@ -15,6 +15,9 @@ function millisToMinutesAndSeconds(millis) {
   return minutes + ":" + (seconds < 10 ? '0' : '') + seconds;
 }
 
+
+
+
 latency.start();
 app.get('/', function (req, res) {
  res.json({status: 'on',
@@ -38,12 +41,11 @@ keepAlive();
 /// DBD.JS BOT
 /// DBD.JS BOT
 /// DBD.JS Bot
-
 const bot = new dbd.Bot({
   sharding: true,
   shardAmount: 2,
   fetchInvites: true,
-  token: process.env.token,
+  token: process.env['token'],
   prefix: ["$getServerVar[prefix]"]
 });
 
@@ -65,8 +67,7 @@ bot.variables({
   antilink: "off",
   executed: "0",
   afk: "off",
-  sarokikey: "OKZDdEcWifHCSmXEIrEoZkegFWt4b3YOtufxFsDz",
-  apikey: process.env.apikey,
+  apikey: process.env['apikey'],
   allsnipe: "",
   afkmsg: "0",
   reason: "",
@@ -84,7 +85,7 @@ bot.variables({
   chatbotchannel: "",
   mutedrole: "",
   logc: "",
-  embedcolor: "010101",
+  embedcolor: "RANDOM",
   messages: "0",
   prefix: "s.",
   money: "0",
@@ -171,6 +172,7 @@ $reply[$messageID;{color:$getServerVar[embedcolor]}{description:**Help:** \`$get
 
 
 $onlyIf[$getGlobalUserVar[blacklist]==off;]
+
 `,
   nonPrefixed: true
 });
